@@ -21,7 +21,7 @@ def selection_sort(arr):
         # TO-DO: swap
         # Your code here
         arr[cur_index], arr[smallest_index]  = arr[smallest_index], arr[cur_index]
- 
+    # arr.sort()
     return arr
 print(selection_sort([11, 8, 3, 5, 9, 2, 4]))
 
@@ -32,6 +32,7 @@ def bubble_sort(arr):
         for j in range(len(arr)-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+    # arr.sort()
     return arr
 print(bubble_sort([11, 8, 3, 5, 9, 2, 4]))
 
